@@ -1,6 +1,7 @@
 $primary-color: #fff;
 $secondary-color: #000;
 $offset-color: #0000FF;
+$border-color: #EEEEEE;
 $orange: #FF764D;
 $font-weights: (
     "regular": 400,
@@ -23,6 +24,7 @@ body {
     font-size: 1.15em;
     line-height: 1.5;
     padding: 1.25rem;
+    border-bottom: 1px solid $border-color;
 
     .nav-links a {
         color: $secondary-color;
@@ -42,8 +44,12 @@ body {
         transition: 0.3s ease;
     }
 
-    .main li:nth-of-type(9) {
-        margin-left: 8em;
+    .main li:nth-of-type(1) {
+        margin-right: -1em;
+    }
+
+    .main li:nth-of-type(11) {
+        margin-left: 15em;
     }
 
     .menu li {
@@ -60,6 +66,9 @@ body {
 
     .more__plus {
         color: $orange !important;
+        border: none;
+        background: none;
+        font-size: 1em;
     }
 
     .main__live {

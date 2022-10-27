@@ -6,6 +6,7 @@ $orange: #FF764D;
 $font-weights: (
     "regular": 400,
     "medium": 500,
+    "semiBold": 600,
     "bold": 700
 );
 
@@ -67,9 +68,8 @@ body {
     .more__info {
         color: $orange !important;
         border: none;
-        background: none;
         font-size: 1em;
-        font-weight: map-get($font-weights, medium);
+        font-weight: map-get($font-weights, semiBold);
     }
 
     .main__live {
@@ -159,4 +159,12 @@ body {
             font-weight: map-get($font-weights, medium);
         }
     }
+}
+
+#nav-info {
+    display: none;
+}
+
+#nav-info.active {
+    display: block;
 }

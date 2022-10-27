@@ -27,14 +27,15 @@
                 <li><a href="/">Packs</a></li>
                 <li><a href="/">Help</a></li>
                 <li class="more">
-                    <button class="more__info" onclick="changedata(0)">More +</button>
+                    <input type="button" class="more__info" id="more__info" onclick="changeData(0); changeValue()"
+                        value="More +"></input>
                 </li>
                 <li><a class="main__live" href="/">Try Live for free</a></li>
                 <li><a class="main__login" href="/">Log in or register</a></li>
             </div>
         </ul>
     </nav>
-    <section class="nav-info">
+    <section class="nav-info" id="nav-info">
         <div class="nav-info-section-one">
             <h2>More on Ableton.com:</h2>
             <ul class="nav-info-container-one">
@@ -69,6 +70,7 @@
             </ul>
         </div>
     </section>
+    <script src="./script.js"></script>
 </body>
 
 </html>

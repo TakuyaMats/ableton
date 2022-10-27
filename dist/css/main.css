@@ -48,9 +48,8 @@ body {
 .navbar .more__info {
   color: #FF764D !important;
   border: none;
-  background: none;
   font-size: 1em;
-  font-weight: 500;
+  font-weight: 600;
 }
 .navbar .main__live {
   color: #0000FF !important;
@@ -120,4 +119,12 @@ body {
 }
 .nav-info .nav-info-container-two h3 {
   font-weight: 500;
+}
+
+#nav-info {
+  display: none;
+}
+
+#nav-info.active {
+  display: block;
 }/*# sourceMappingURL=main.css.map */

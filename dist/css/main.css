@@ -45,11 +45,12 @@ body {
 .navbar .more > ul {
   list-style: none;
 }
-.navbar .more__plus {
+.navbar .more__info {
   color: #FF764D !important;
   border: none;
   background: none;
   font-size: 1em;
+  font-weight: 500;
 }
 .navbar .main__live {
   color: #0000FF !important;
@@ -61,11 +62,62 @@ body {
   text-decoration: none;
 }
 
-.dropdown {
-  background-color: rgb(1, 139, 139);
-  padding: 1em 0;
-  position: absolute;
-  display: none;
-  border-radius: 8px;
-  top: 35px;
+.nav-info {
+  padding: 1.5em;
+}
+.nav-info .nav-info-section-one {
+  padding-bottom: 4em;
+}
+.nav-info .nav-info-section-one h2 {
+  font-weight: 500;
+  padding-bottom: 1em;
+}
+.nav-info .nav-info-container-one {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-info .nav-info-container-one li:nth-of-type(7) {
+  margin-right: 5em;
+}
+.nav-info .nav-info-container-one li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-info .nav-info-container-one a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #000;
+}
+.nav-info .nav-info-container-one .about-ableton {
+  color: #FF764D;
+}
+.nav-info .nav-info-section-two h2 {
+  font-weight: 500;
+  padding-bottom: 1em;
+}
+.nav-info .nav-info-container-two {
+  display: flex;
+  flex-direction: row;
+}
+.nav-info .nav-info-container-two li:nth-of-type(7) {
+  margin-right: 5em;
+}
+.nav-info .nav-info-container-two li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding-right: 2em;
+}
+.nav-info .nav-info-container-two a {
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 1.5em;
+  margin-top: 0.5em;
+  color: #000;
+}
+.nav-info .nav-info-container-two h3 {
+  font-weight: 500;
 }/*# sourceMappingURL=main.css.map */

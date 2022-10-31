@@ -3,12 +3,31 @@ $secondary-color: #000;
 $offset-color: #0000FF;
 $border-color: #EEEEEE;
 $orange: #FF764D;
+
+@mixin flexSpaceBetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+};
+
 $font-weights: (
     "regular": 400,
     "medium": 500,
     "semiBold": 600,
     "bold": 700
 );
+
+@mixin mobile {
+    @media (max-width: 1250px) {
+        @content
+    }
+};
+
+@mixin hamburger {
+    @media (max-width: 1020px) {
+        @content
+    }
+};
 
 * {
     margin: 0;
@@ -26,6 +45,17 @@ body {
     line-height: 1.5;
     padding: 1.25rem;
     border-bottom: 1px solid $border-color;
+    .logo {
+        height: 40px;
+    }
+
+    @include mobile {
+        font-size: 0.9em;
+
+        .logo {
+            height: 30px;
+        }
+    }
 
     .nav-links a {
         color: $secondary-color;
@@ -33,10 +63,8 @@ body {
     }
 
     .main {
+        @include flexSpaceBetween;
         list-style: none;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
     }
 
     .menu li:hover {
@@ -47,10 +75,73 @@ body {
 
     .main li:nth-of-type(1) {
         margin-right: -1em;
+
+        @include mobile {
+            margin-right: -2em;
+        }
+    }
+
+    .main li:nth-of-type(2) {
+        @include mobile {
+            margin-right: -2em;
+        }
+    }
+
+    .main li:nth-of-type(3) {
+        @include mobile {
+            margin-right: -2em;
+        }
+    }
+
+    .main li:nth-of-type(4) {
+        @include mobile {
+            margin-right: -2em;
+        }
+    }
+
+    .main li:nth-of-type(5) {
+        @include mobile {
+            margin-right: -2em;
+        }
+    }
+
+    .main li:nth-of-type(6) {
+        @include mobile {
+            margin-right: -2em;
+        }
+    }
+
+    .main li:nth-of-type(7) {
+        @include mobile {
+            margin-right: -2em;
+        }
+    }
+
+    .main li:nth-of-type(8) {
+        @include mobile {
+            margin-right: -2em;
+        }
+    }
+
+    .main li:nth-of-type(9) {
+        @include mobile {
+            margin-right: -2em;
+        }
+    }
+
+    .main li:nth-of-type(10) {
+        margin-left: 15em;
+        @include mobile {
+            margin-left: 20em;
+            margin-right: -3em;
+        }
     }
 
     .main li:nth-of-type(11) {
-        margin-left: 15em;
+        margin-right: 2em;
+        @include mobile {
+            margin-right: 2em;
+        }
     }
 
     .menu li {
@@ -98,19 +189,15 @@ body {
     }
 
     .nav-info-container-one {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        @include flexSpaceBetween;
 
         li:nth-of-type(7) {
             margin-right: 5em;
         }
 
         li {
+            @include flexSpaceBetween;
             list-style: none;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
         }
 
         a {
